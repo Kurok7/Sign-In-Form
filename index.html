@@ -25,31 +25,32 @@
             If interested, please sign-up now to get started!</p>
         </div>
         <h5>
-            <form>
-                <label>First Name
-                    <input/>
+            <form action="http://httpbin.org/post" method="post" target="_blank">
+                <label for="fname">First Name
+                    <input id="fname" name="first_name"/>
                 </label>
-                <label>Last Name
-                    <input/>
+                <label for="lname">Last Name
+                    <input id="lname" name="last_name"/>
                 </label><br>
-                <label>Email*
-                    <input type="email" required/>
+                <label for="email">Email*
+                    <input type="email" id="email" name="email" required/>
                 </label>
-                <label>Phone Number
-                    <input type="number"/>
+                <label for="phone">Phone Number
+                    <input type="tel" id="phone" name="phone_number" title="Please enter a valid phone number, ex: 777-777-7777. Dashes needed"
+                    pattern=".?(\d{3}).*(\d{3}).*(\d{4})"/>
                 </label><br>
-                <label>Password*
-                    <input type="password" required/>
+                <label for="pawd">Password*
+                    <input type="password" id="pwd" name="pwd" required/>
                 </label>
-                <label>Confirm Password*
-                    <input type="password" required/>
-                </label>
+                <label for="confirm">Confirm Password*
+                    <input type="password" id="confirm" name="pass_confirmation" required/>
+                </label><br><br>
+                <div class="button">
+                    <button type="submit">Create Account</button>
+                </div>
+                <p>Already have an account? <a href="">Log in</a></p>
             </form>
         </h5><br>
-        <div class="button">
-            <button type="submit">Create Account</button>
-        </div>
-        <br><p>Already have an account? <a href="">Log in</a></p>
     </main><br>
 </body>
 </html>
