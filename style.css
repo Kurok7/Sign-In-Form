@@ -7,10 +7,19 @@ body {
     background-color: green;
 }
 
-.horse-container {
+/* .page {
+    border: 4px dashed red;
+    background-color: lavender;
+    overflow: hidden;
+} */
+
+.content {
     position: relative;
     text-align: left;
     float: left;
+    background-color: blue;
+    width: 420px;
+    height: 140%;
 }
 
 .background-text {
@@ -23,4 +32,20 @@ body {
     border: 2px;
     padding: 1em 9.5em;
     color: red;
+}
+
+.input {
+    background-color: grey;
+    border: 3px ridge lightblue;
+}
+
+.intro {
+    background-color: pink;
+    border: 3px ridge yellow;
+}
+
+.button {
+    /* float: left; */
+    background-color: purple;
+    border: 3px solid black;
 }
